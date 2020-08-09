@@ -30,7 +30,7 @@ $(function () {
             console.log("back");
             animate(document.documentElement, {
                 scrollTop: 0
-            }, 2000);
+            }, 1000);
         }
     }
 })
