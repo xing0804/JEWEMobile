@@ -8,7 +8,7 @@ $(function () {
                 display:"block"
             })
         }else if(num%2==0){
-            $(this).find("span").html("首页");
+            $(this).find("span").html("品牌文化");
             $(".nav-mask").css({
                 display:"none"
             })

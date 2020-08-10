@@ -8,7 +8,7 @@ $(function () {
                 display:"block"
             })
         }else if(num%2==0){
-            $(this).find("span").html("首页");
+            $(this).find("span").html("珠宝首饰");
             $(".nav-mask").css({
                 display:"none"
             })
@@ -33,6 +33,7 @@ $(function () {
             }, 1000);
         }
     };
+    //查看更多
     $(".more").click(function(){
         $(".container").css({
             height:"43rem"
@@ -40,5 +41,24 @@ $(function () {
         $(this).css({
             display:"none"
         })
-    })
+    });
+    //标签点击效果
+    $(".label1 a").hammer().bind("tap",function(){
+        $(".label1 a").each(function(){
+            $(this).removeClass("checklabel")
+        })
+        $(this).addClass("checklabel");
+    });
+    $(".label2 a").hammer().bind("tap",function(){
+        $(".label2 a").each(function(){
+            $(this).removeClass("checklabel")
+        })
+        $(this).addClass("checklabel");
+    });
+    // console.log($(".label1 a")[0]);
+    // $(".label1 a")[0].hammer().bind("tap",function(){
+    //     $(".con-item").css({
+    //         display:block
+    //     })
+    // })
 })
