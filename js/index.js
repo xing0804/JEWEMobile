@@ -32,5 +32,28 @@ $(function () {
                 scrollTop: 0
             }, 1000);
         }
-    }
+    };
+
+    //点击查看系列
+    // console.log(series);
+    $(".series0").hammer().bind("tap",function(){
+        window.location.replace("../geometry.html");
+    });
+    $(".series1").hammer().bind("tap",function(){
+        window.location.replace("../ring.html");
+    });
+    $(".series2").hammer().bind("tap",function(){
+        window.location.replace("../earing.html");
+    });
+    $(".series3").hammer().bind("tap",function(){
+        window.location.replace("../lifetime.html");
+    });
+    $(".series4").hammer().bind("tap",function(){
+        window.location.replace("../letter.html");
+    });
+
+    //进入详情页面
+    $(".con-item").hammer().bind("tap",function(){
+        window.location.replace("../product.html");
+    })
 })

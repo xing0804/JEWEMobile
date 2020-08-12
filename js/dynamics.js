@@ -69,7 +69,8 @@ $(function () {
             cons[i].style.display="none"
         }
         $(".con1").css({
-            display:"block"
+            display:"block",
+            height:"11rem"
         });
         $(".con-more").css({
             display:"block"

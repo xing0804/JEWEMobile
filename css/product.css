@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* logo开始 */
+.logo{
+    width: 4rem;
+    height: 1rem;
+    margin: 0 auto;
+    padding: 0.35rem 0;
+}
+.logo img{
+    display: block;
+    height: 0.9rem;
+    width: 3.5rem;
+    margin: 0 auto;
+}
+
+/* logo结束  */
+/* nav开始 */
+.nav{
+    width: 100%;
+    height: 1rem;
+    background: #565656;
+    position: relative;
+}
+.nav span{
+    font-size: 0.3rem;
+    font-family: "华文仿宋";
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.nav .nav-more{
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    font-size: 0.26rem;
+    line-height: 1rem;
+    transform: rotate(90deg) scaleY(1.5);
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav-mask{
+    width: 100%;
+    background: #565656;
+    display: none;
+}
+.nav-mask span{
+    font-size: 0.4rem;
+    font-family: "华文仿宋";
+    display: block;
+    width: 2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.nav-mask .line{
+    background: #999;
+    height: 0.005rem;
+    width: 100%;
+    border: none;
+}
+/* nav结束 */
+/* main */
+.main{
+    width: 7rem;
+    margin: 0 auto;
+}
+.back{
+    width: 100%;
+    text-align: right;
+}
+.back a{
+    color: #a3a3a3;
+    font-size: 0.3rem;
+}
+.swiper-container{
+    width: 7rem;
+    height: 8rem;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: .18rem;
+    height: .01rem;
+    border-radius: 0;
+    background-color: #a3a3a3;
+}
+.swiper-pagination-bullet-active{
+    background: #333333;
+    height: .03rem !important;
+}
+.swiper-slide img{
+    width: 7rem;
+    height: 100%;
+}
+.swiper-img{
+    width: 100%;
+    height: 8rem;
+    background-color: #999;
+}
+.swiper-btns{
+    width: 2.8rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.swiper-btn{
+    width: .5rem;
+    height: .01rem;
+    margin-right: .2rem;
+    display: block;
+    background-color: #a3a3a3;
+    margin-top: .1rem;
+    float: left;
+}
+.swiper-btn:nth-child(1){
+    height: .03rem;
+    background-color: #000;
+}
+.detail{
+    margin-top: .5rem;
+}
+.data-title{
+    font-size: 0.5rem;
+    font-family: "宋体";
+    font-weight: bold;
+    color: #333333;
+}
+.data-price{
+    font-size: 0.4rem;
+    font-family: "宋体";
+    color: #a3a3a3;
+    margin-top: 0.3rem;
+}
+.data-text{
+    font-size: 0.27rem;
+    font-family: "微软雅黑";
+    color: #a3a3a3;
+    margin-top: 0.3rem;
+    line-height: 0.5rem;
+    letter-spacing: 0.005rem;
+}
+.data-no{
+    margin-top: -0.3rem;
+}
+.data-no,.data-meteriall,.data-color{
+    height: .4rem;
+}
+.data-meteriall,.data-color{
+    margin-top: .2rem;
+}
+.data-attr strong{
+    font-size: .27rem;
+    color: #333;
+    font-family: "微软雅黑";
+    font-weight: 600;
+    line-height: .5rem;
+}
+.data-attr span{
+    font-size: .27rem;
+    color: #a3a3a3;
+    font-family: "微软雅黑";
+    line-height: .5rem;
+    margin-left: -.3rem;
+}
+.data-consult{
+    margin-top: 1rem;
+}
+.data-consult-btn{
+    width: 7rem;
+    height: 1rem;
+    margin: 0 auto;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: .3rem;
+}
+.news1{
+    margin-top: .5rem !important;
+}
+.news{
+    width: 7rem;
+    margin: 0 auto;
+    /* margin-top: .5rem; */
+}
+.news-title{
+    height: 1rem;
+    width: 100%;
+    border: 0.01rem solid #a3a3a3;
+    cursor: pointer;
+    position: relative;
+}
+.show-btn{
+    font-weight: bold;
+    font-size: .5rem;
+    color: #666;
+    position: absolute;
+    left: .5rem;
+    top: .19rem;
+}
+.small-title{
+    font-size: .3rem;
+    color: #666;
+    position: absolute;
+    left: .9rem;
+    top: .35rem;
+}
+.news-content{
+    font-size: .26rem;
+    font-family: "微软雅黑";
+    color: #999;
+    margin-top: .5rem;
+    line-height: .5rem;
+    overflow: hidden;
+    height: 4rem;
+    
+}
+@keyframes show{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 5rem;
+    }
+}
+@keyframes show2{
+    0%{
+        height: 5rem;
+    }
+    100%{
+        height: 0;
+    }
+}
+.news-content span{
+    font-size: .26rem;
+    color: #999;
+    line-height: .5rem;
+    display: block;
+}
+.news-content .strong{
+    color: #000;
+}
+.data-pack-content-two{
+    margin-top: .5rem;
+}
+/* main */
+/* other */
+.other{
+    width: 7rem;
+    margin: 0 auto;
+}
+.other-title{
+    font-size: .5rem;
+    color: #333;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.other-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+}
+.con-item{
+    width: 3.4rem;
+    height: 5.5rem;
+}
+.con-item img{
+    width: 100%;
+    height: 4.5rem;
+}
+.con-item .con-item-title{
+    width: 100%;
+    font-size: 0.3rem;
+    text-align: center;
+    display: block;
+    line-height: 1rem;
+    margin-top: -0.2rem;
+}
+/* other */
+/* bottom开始 */
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+}
+.bottom-item{
+    width: 12.5%;
+    height: 30%;
+}
+.bottom-item img{
+    height: 100%;
+    width: 100%;
+}
+
+/* bottom结束 */
+/* fotter开始 */
+.footer{
+    width: 100%;
+}
+.footer-container{
+    width: 7rem;
+    margin: 0 auto;
+}
+.footer-container .span1{
+    display: block;
+    color: #999;
+    font-size: 0.26rem;
+    line-height: 0.5rem;
+    width: 7rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-container .span2{
+    display: block;
+    width: 4rem;
+    margin: 0 auto;    
+}
+.footer-container .span2 img{
+    height: 0.5rem;
+    width: 4rem;
+}
+.footer-container .span3{
+    display: block;
+    width: 7rem;
+    margin: 0 auto;
+    font-size: 0.26rem;
+    color: #999;
+    line-height: 0.5rem;
+    text-align: center;
+}
+/* fotter结束 */
+.top{
+    background-color: #606060;
+    width: 0.7rem;
+    height: 0.7rem;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.top span{
+    height: 0.3rem;
+    width: 0.3rem;
+    font-size: 0.3rem;
+    margin: 0 auto;
+    display: block;
+    transform: rotate(270deg) scaleY(1.5);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.12rem;
+    margin-top: 0.15rem;
+}
+
